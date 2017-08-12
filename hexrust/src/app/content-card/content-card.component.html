@@ -1,0 +1,14 @@
+<div class="card card-outline-primary border-size-2">
+	<div class="card-block">
+		<a class="anchor" id="{{cardTitle | className}}"></a>
+		<h5 class="card-title">
+			{{cardTitle}}
+			<span *ngIf="isNew()" class="badge badge-info">New</span>
+		</h5>
+
+		<div [innerHtml]="cardTop"></div>
+		<div *ngIf="hasAccordion()" id="{{(cardTitle | className) + '-accordion'}}" role="tablist" aria-multiselectable="true">
+			<accordion *ngFor="let block of cardAccordion" [myParent]="'#' +(cardTitle | className) + '-accordion'" [title]="block[0]" [content]="block[1]"></accordion>
+		</div>
+	</div>
+</div>
