@@ -1,0 +1,11 @@
+<div id="sideNav" class="card card-outline-primary white-background">
+	<div class="card-block">
+		<h5 class="card-title">
+			In-page Navigation
+			<span class="badge badge-info">New</span>
+		</h5>
+		<div class="list-group">
+			<a *ngFor="let card of dataService.cards" [href]="'#' + (card.title | className)" class="list-group-item">{{card.title}}</a>
+		</div>
+	</div>
+</div>

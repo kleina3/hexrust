@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="viewer-box container-fluid">
+
+	<div class="ribbon row rounded-bottom">
+		<div class="col-12">
+			<navbar></navbar>
+		</div>
+	</div>
+	<div class="padded-cell">
+		<jumbotron [title]="this.dataService.jumboTitle" [caption]="this.dataService.jumboCaption"></jumbotron>
+	</div>
+	<router-outlet></router-outlet>
+	
+	<footer>footer goes here</footer>
+</div>

@@ -1,0 +1,12 @@
+.navbar-light{
+	background-color:#bfb09b;
+	background-color:#f7f7f7;
+}
+.breadcrumb{
+	margin-bottom:0px;
+	background-color:#cbbfae;
+	background-color:#e7e7e7;
+}
+.active{
+	font-weight:bold;
+}

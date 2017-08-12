@@ -1,0 +1,18 @@
+.ribbon {
+	border:black solid 1px;
+	border-top:none;
+	position:sticky;
+	top:0px;
+	z-index:100;
+	background-color:rgba(175, 156, 131, 1);
+	height:auto;
+}
+.viewer-box{
+	max-width:1400px;
+	margin:auto;
+	background-color:rgba(175, 156, 131, 0.90);
+}
+footer {
+	text-align:center;
+	border-top:1px rgba(10,10,10,.50) solid;
+}

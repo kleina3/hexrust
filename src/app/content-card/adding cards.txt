@@ -1,0 +1,3 @@
+In *page-name*.service.ts:
+	import each card
+	create add a card to the "cards" array
