@@ -2,7 +2,8 @@
 	margin-bottom:5px;
 }
 .jumbo-background{
-	//background-image: url("https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/4678818/original/hash:1467624353/1428461508_scrubland_1__dreamstime_xl_3864148.jpg?1467624353");
+	background-image: url("https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/4678818/original/hash:1467624353/1428461508_scrubland_1__dreamstime_xl_3864148.jpg?1467624353");
 	background-size:cover;
-	color:black;
+	color:white;
+    
 }

@@ -5,7 +5,7 @@
 			<span class="badge badge-info">New</span>
 		</h5>
 		<div class="list-group">
-			<a *ngFor="let card of dataService.cards" [href]="'#' + (card.title | className)" class="list-group-item">{{card.title}}</a>
+			<a *ngFor="let card of dataService.cards" routerLink="'#' + (card.title | className)" class="list-group-item">{{card.title}}</a>
 		</div>
 	</div>
 </div>
