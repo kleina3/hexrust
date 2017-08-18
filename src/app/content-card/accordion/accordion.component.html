@@ -1,13 +1,15 @@
 <div class="card">
-	<div class="card-header" role="tab" [id]="'heading-' + getTitleClass()">
-		<h5 class="mb-0">
-			<a data-toggle="collapse" [href]="'#collapse-' + getTitleClass()" aria-expanded="true" (aria-controls)="'collapse-' + getTitleClass()">
-				{{title}}
-			</a>
-		</h5>
-	</div>
+    <div class="card-header" role="tab" [id]="'heading-' + getTitleClass()">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" [href]="'#collapse-' + getTitleClass()" aria-expanded="true" [attr.aria-controls]="'collapse-' + getTitleClass()">
+          {{title}}
+        </a>
+      </h5>
+    </div>
 
-	<div [id]="'collapse-' + getTitleClass()" class="collapse" role="tabpanel" (aria-labelledby)="'heading-' + getTitleClass()">
-		<div class="card-block" [innerHtml]="content"></div>
-	</div>
-</div>
+    <div [id]="'collapse-' + getTitleClass()" class="collapse" role="tabpanel" [attr.aria-labelledby]="'heading-' + getTitleClass()" [attr.data-parent]="this.myParent">
+      <div class="card-body">
+        <div class="card-text" [innerHtml]="content"></div>
+      </div>
+    </div>
+  </div>

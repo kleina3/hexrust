@@ -1,11 +1,11 @@
-<div id="sideNav" class="card card-outline-primary white-background">
-	<div class="card-block">
+<div id="sideNav" class="card border-primary white-background">
+	<div class="card-body">
 		<h5 class="card-title">
 			In-page Navigation
 			<span class="badge badge-info">New</span>
 		</h5>
 		<div class="list-group">
-			<a *ngFor="let card of dataService.cards" routerLink="'#' + (card.title | className)" class="list-group-item">{{card.title}}</a>
+			<a *ngFor="let card of dataService.cards" [attr.routerLink]="'#' + (card.title | className)" routerLinkActive="active" class="list-group-item list-group-item-action">{{card.title}}</a>
 		</div>
 	</div>
 </div>

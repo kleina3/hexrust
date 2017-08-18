@@ -1,9 +1,26 @@
 
 <div class="row justify-content-center body-row">
-	<div class="col-12 col-md-3 sidebar" id="sidebar-left">
+	<div class="col-12 col-sm-3 order-1 sidebar" id="sidebar-left">
 		<left-sidebar></left-sidebar>
 	</div>
-	<div class="col-12 col-md-9 main-body">			
+	<div class="col-6 col-sm-3 order-3 sidebar" id="sidebar-right">
+		<right-sidebar></right-sidebar>
+	</div>
+	<div class="col-12 col-sm-6 order-2 main-body">			
+		<div class="btn-toolbar bg-secondary mb-2 p-1" role="toolbar" aria-label="Toolbar with button groups">
+			<div class="btn-group mr-2" role="group" aria-label="Third group">
+				<a role="button" class="btn btn-primary" routerLink="/homepage" routerLinkActive="active">Default</a>
+			</div>
+			<div class="btn-group mr-2" role="group" aria-label="First group">
+				<a role="button" class="btn btn-primary">1</a>
+				<a role="button" class="btn btn-primary" routerLink="/info" routerLinkActive="active">2</a>
+				<a role="button" class="btn btn-primary">3</a>
+			</div>
+			<div class="btn-group mr-2" role="group" aria-label="Second group">
+				<a role="button" class="btn btn-primary">4</a>
+				<a role="button" class="btn btn-primary">5</a>
+			</div>
+		</div>
 		<main-content></main-content>
 	</div>
 </div>

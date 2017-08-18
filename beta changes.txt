@@ -1,0 +1,45 @@
+updating from bootstrap 4 alpha to bootstrap 4 beta
+https://github.com/twbs/bootstrap/issues/21568
+
+accordion
+	refactor the top-level accordion to be inside the accordion class (in order to properly close other sections)
+
+_______________________
+Features to add
+
+Fix angular routing to hash anchors
+	try adding target self as below:
+		<a href="#faq-1" target="_self">Question 1</a>
+		! Might break routing when leaving page
+
+Look into https://github.com/rpocklin/angular-timeline for history timeline
+	glyphicons (look into the upstream version for more)
+	Positive: star, heart, ok, education, grain
+	Negative: tint, fire, warning-sign, remove
+	Misc: book, leaf, eye, globe, link, flash, tree-deciduous, lock, road, hourglass, music, flag, apple, tent,
+		Chess: tower, pawn, king, queen, bishop, knight
+
+Look into calendar - how to not make update only when information is provided?
+	Add upcoming events to sidebar
+
+Getting started
+	Progress bar
+
+Button groups for different class
+	?maybe have top buttons divide into roles?
+		allows for repeats in cases where versatility is important
+		can still link directly to class section from sidebar
+	Also be able to link to that button group from dropdown
+	maincontent loads different cards for each class
+		default is an overall description of class
+
+Card features:
+	Image caps
+	Card groups and card-deck
+	footer of date created
+	Card columns
+	Optionally hide card titles
+
+Make sidebars sticky
+
+Create tabbed card

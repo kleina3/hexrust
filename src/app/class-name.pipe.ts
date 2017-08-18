@@ -8,6 +8,7 @@ export class ClassNamePipe implements PipeTransform {
 	transform(value: string): string {
 		let newPipe = new LowerCasePipe();
 		let results = newPipe.transform(value)
+		results = results.replace(/[^\w\s]/gi, '');
 		return results.replace(new RegExp(" ", 'g'), "-");
 	}
 }

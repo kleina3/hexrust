@@ -1,6 +1,7 @@
-.card-outline-primary{
-	background-color:#f7f7f7;
+.border-primary {
+    border-width: .1rem;
 }
+
 .anchor{
 	 position:absolute; 
 	 margin-top:-75px;

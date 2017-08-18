@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AlertModule } from 'ngx-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { GlobalSharedModule } from './global/global-shared.module';
@@ -21,7 +20,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 	PageNotFoundComponent,
   ],
   imports: [
-    AlertModule.forRoot(),
 	BrowserModule,
 	HomepageModule,
 	InfoModule,
